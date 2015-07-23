@@ -1,0 +1,22 @@
+{
+	"name": "latehours/themosis-mailgun-wrapper",
+	"description": "A simple Mailgun wrapper for Themosis Framework",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Johan Ruokangas",
+			"email": "johan@latehours.net",
+			"homepage": "http://latehours.net"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Latehours\\Mailgun\\": ""
+		}
+	},
+	"require": {
+		"php": ">=5.5.0",
+		"mailgun/mailgun-php": "^1.8",
+		"themosis/framework": "1.1.*"
+	}
+}
