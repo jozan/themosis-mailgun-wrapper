@@ -6,13 +6,15 @@ A simple Mailgun wrapper for [Themosis Framework](http://framework.themosis.com/
 Open up `.env.*.php` in your project root and add the following lines at the end of array:
 
 ```php
-    'MAILGUN_KEY'    => 'your mailgun key',
-    'MAILGUN_DOMAIN' => 'your mailgun domain',
+'MAILGUN_KEY'    => 'your mailgun key',
+'MAILGUN_DOMAIN' => 'your mailgun domain',
 ```
 
 ### Example usage
 
 ```php
+// Somewhere in your php code...
+
 use Latehours\Mailgun\Mail;
 
 $mail = new Mail();
@@ -26,5 +28,8 @@ $mail->send('email.greeting', $message, [
     'to'      => 'Awesome Dude <newdude@gmail.com>',
     'subject' => 'Thanks for registering!'
 ]);
-
+```
+Example view `views/emails/greeting.scout.php`:
+```php
+{{ $greeting }}
 ```
