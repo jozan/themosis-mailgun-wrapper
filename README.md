@@ -23,7 +23,7 @@ $message = ['greeting' => 'Thanks for registering!'];
 
 // 'emails.greeting' is a Scout template
 // $message is an array passed to the view
-$mail->send('email.greeting', $message, [
+$mail->send('emails.greeting', $message, [
     'from'    => 'Admin <admin@dude.app>',
     'to'      => 'Awesome Dude <newdude@gmail.com>',
     'subject' => 'Thanks for registering!'
